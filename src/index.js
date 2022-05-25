@@ -5,6 +5,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Portfolio from './screens/Portfolio'
+import About from './screens/About'
+import Contact from './screens/Contact'
+import Resume from './screens/Resume'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,8 +15,10 @@ root.render(
    <BrowserRouter>
    <Routes>
       <Route path="/" element={<App />} />
-      <Route path="portfolio" element={<Portfolio/>} />
-    
+      <Route path="/portfolio" element={<Portfolio/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/resume" element={<Resume/>} />
     </Routes>
    </BrowserRouter>
   </React.StrictMode>

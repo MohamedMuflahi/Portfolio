@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-function Portfolio() {
+
+function Contact() {
   return (
     <div>
-      <Navbar/>
-      <h1>Portfolio</h1>
+        <Navbar/>
+        <h1>Contact</h1>
     </div>
   )
 }
 
-export default Portfolio
+export default Contact

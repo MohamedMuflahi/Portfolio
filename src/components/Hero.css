@@ -1,0 +1,171 @@
+.table-img{
+    width: 300px;
+    height: 300px;
+}
+.hero-div{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    /* http://john.wethemez.com/static/media/banner_img.d852f421.svg */
+    overflow: hidden;
+}
+.wave-img{
+    position: absolute;
+    top: -1px;
+    height: 100%;
+    width: auto;
+    right: 0;
+    z-index: -1;
+}
+.table-div{
+    display: flex;
+    flex-direction: row;
+}
+.image-div{
+    display: flex;
+    flex-direction: row;
+}
+.circle{
+    border-radius: 90px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	/* transform: scale(1); */
+	animation: pulse 2s infinite;
+}
+.xs{
+    width: 15px;
+    height: 15px;
+}
+.md{
+    width: 20px;
+    height: 20px;
+}
+.lg{
+    width: 30px;
+    height: 30px;
+}
+.xl{
+    width: 40px;
+    height: 40px;
+}
+.xxl{
+    width: 60px;
+    height: 60px;
+}
+.image-div img{
+    width: 50px;
+    height: 50px;
+    animation-duration: 12s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    
+}
+.html-img{
+    transform: translateY(70px) translateX(210px);
+}
+.css-img{
+    transform: translateY(20px) translateX(70px);
+}
+.c-img{
+    transform: translateY(-50px) translateX(30px);
+}
+.cplus-img{
+    transform: translateY(-60px) translateX(70px);
+}
+.ruby-img{
+    transform: translateY(15px) translateX(0px);
+}
+.js-img{ 
+    transform: translateY(-5px) translateX(-20px);
+}
+.image-container{
+    margin-right: 10vw;
+    padding: 1rem; 
+    z-index:100;
+}
+.bubbles-1{
+    animation-duration: 6s;
+    animation-name: flying1;
+    animation-iteration-count: infinite;
+}
+.bubbles-2{
+    animation-duration: 12s;
+    animation-name: flying2;
+    animation-iteration-count: infinite;
+}
+.bubbles-3{
+    animation-duration: 8s;
+    animation-name: flying3;
+    animation-iteration-count: infinite;
+}
+
+.bubble-container{
+    /* background-color:black; */
+    width: 20%;
+    height: 100%;
+    padding: 1rem;
+
+}
+@keyframes floating {
+    from {
+        transform:translateY(inherit) translateX(inherit); 
+        
+    }
+    50%{
+        transform: translateY(-50px) translateX(0px);
+    }
+    to {
+        transform:translateY(inherit) translateX(inherit); 
+    }
+  }
+  @keyframes flying1 {
+    from {
+        transform:translateY(inherit);
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+    to {
+        transform:translateY(inherit);
+    }
+  }
+  @keyframes flying2 {
+    from {
+        transform:translateY(inherit);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    to {
+        transform:translateY(inherit);
+    }
+  }
+  @keyframes flying3 {
+    from {
+        transform:translateY(inherit);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+    to {
+        transform:translateY(inherit);
+    }
+  }
+  @keyframes pulse {
+	0% {
+        transform:translateY(inherit) translateX(inherit) scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+	}
+
+	70% {
+        transform:translateY(inherit) translateX(inherit) scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+        transform:translateY(inherit) translateX(inherit) scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
