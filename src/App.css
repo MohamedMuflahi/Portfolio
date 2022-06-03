@@ -13,6 +13,7 @@
   position: absolute;
   width: calc(100% - 64px);
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;
