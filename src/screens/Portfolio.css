@@ -1,0 +1,63 @@
+.title{
+  font-family: 'Montserrat', sans-serif;
+}
+.portfolio-div{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.project-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.card-item.MAC{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  margin:10px;
+}
+.card-item.IOS{
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  margin:10px;
+}
+.card-item.MAC img{
+  width: 100%;
+  margin-top: 25%;
+  height: auto;
+}
+.card-item.IOS img{
+  height: 100%;
+  width: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+.card-item:hover .overlay {
+  transform: scale(1);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

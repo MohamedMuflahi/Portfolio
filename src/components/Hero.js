@@ -12,7 +12,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 function Hero() {
   const { height, width } = useWindowDimensions();
   let arr = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
   ];
   function getRandomInt(max) {
@@ -22,7 +22,7 @@ function Hero() {
     <div className="hero-div">
     <div>
     <div className="bubble-container bubbles-1">
-        {arr.map(() => {
+        {arr.map((i) => {
           let xpos = getRandomInt(width);
           let ypos = getRandomInt(height);
           let size = getRandomInt(40);
@@ -32,7 +32,8 @@ function Hero() {
           let num = getRandomInt(5);
           let a = 1;
           return (
-            <div
+            <div 
+             key={getRandomInt(10000) * getRandomInt(10000)}
               className="circle"
               style={{
                 width: `${size}px`,
@@ -46,7 +47,7 @@ function Hero() {
         })}
       </div>
       <div className="bubble-container bubbles-2" style={{zIndex: -3}}>
-        {arr.map(() => {
+        {arr.map((i) => {
           let xpos = getRandomInt(width);
           let ypos = getRandomInt(height);
           let size = getRandomInt(40);
@@ -57,6 +58,7 @@ function Hero() {
           let a = 1;
           return (
             <div
+              key={getRandomInt(10000) * getRandomInt(10000)}
               className="circle"
               style={{
                 width: `${size}px`,
@@ -70,7 +72,7 @@ function Hero() {
         })}
       </div>
       <div className="bubble-container bubbles-3" style={{zIndex: -2}}>
-        {arr.map(() => {
+        {arr.map((i) => {
           let xpos = getRandomInt(width);
           let ypos = getRandomInt(height);
           let size = getRandomInt(40);
@@ -81,6 +83,7 @@ function Hero() {
           let a = 1;
           return (
             <div
+              key={getRandomInt(10000) * getRandomInt(10000)}
               className="circle"
               style={{
                 width: `${size}px`,
@@ -98,7 +101,7 @@ function Hero() {
     </div>
       <div className='hi-text'>
       <h1>Mohamed Muflahi</h1>
-        <TypeWriterEffect
+        {/* <TypeWriterEffect
         textStyle={{
           color: 'red',
           fontWeight: 'bold',
@@ -113,7 +116,7 @@ function Hero() {
         ]}
         multiTextDelay={1000}
         typeSpeed={30}
-      />
+      /> */}
       </div>
       <div className="image-container">
         <div className="image-div">

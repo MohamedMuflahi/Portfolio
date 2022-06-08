@@ -1,11 +1,17 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import './Portfolio.css'
+import Footer from '../components/Footer'
+import Port from '../components/Port'
 function Portfolio() {
   return (
-    <div>
-      <Navbar/>
-      <h1>Portfolio</h1>
+    <div className="App">
+    <Navbar />
+    <div className="Content">
+      <Port/>
+      <Footer />
     </div>
+  </div>
   )
 }
 
