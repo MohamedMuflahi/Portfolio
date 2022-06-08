@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-
+import AboutMe from '../components/AboutMe'
 function About() {
   return (
-    <div>
-        <Navbar/>
-        <h1>About</h1>
+    <div className="App">
+    <Navbar />
+    <div className="Content">
+      <AboutMe/>
     </div>
+  </div>
   )
 }
 

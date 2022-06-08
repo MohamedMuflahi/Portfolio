@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import "../screens/Portfolio.css";
 import YomiIos from "../Images/Yomi_Ios.png";
 import YomiMac from "../Images/Yomi_Mac.png";
+import citiMac from '../Images/citibike_render.png'
+import whatsMac from '../Images/whatsupp_render.png'
+import shopMac from '../Images/shopify_render.png'
 function Port() {
   return (
     <div className="portfolio-div">
@@ -15,13 +18,29 @@ function Port() {
           </div>
         </div>
         <div className="card-item MAC">
-          <img src={YomiMac} />
+          <img src={whatsMac} />
           <div className="overlay">
-            <div className="text">WhatsUPP</div>
+            <div className="text">WhatsUpp</div>
           </div>
         </div>
-        <div className="card-item MAC"></div>
-        <div className="card-item IOS"></div>
+        <div className="card-item MAC">
+          <img src={shopMac} />
+          <div className="overlay">
+            <div className="text">Shopify 2.0</div>
+          </div>
+        </div>
+        <div className="card-item IOS">
+          <img src={YomiIos} />
+          <div className="overlay">
+            <div className="text">YOMIMASU</div>
+          </div>
+        </div>
+        <div className="card-item MAC">
+          <img src={citiMac} />
+          <div className="overlay">
+            <div className="text">CitiBike 2.0</div>
+          </div>
+        </div>
       </div>
     </div>
   );
