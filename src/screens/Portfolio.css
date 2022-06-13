@@ -1,6 +1,9 @@
 .title{
   font-family: 'Montserrat', sans-serif;
 }
+.blue{
+  background-color: #061735;
+}
 .portfolio-div{
   display: flex;
   flex-direction: column;

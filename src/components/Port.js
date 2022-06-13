@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import PortCard from "./PortCard";
 import "../screens/Portfolio.css";
 import YomiIos from "../Images/Yomi_Ios.png";
+import HumanIos from '../Images/Human_Login.png'
 import YomiMac from "../Images/Yomi_Mac.png";
 import citiMac from '../Images/citibike_render.png'
 import whatsMac from '../Images/whatsupp_render.png'
@@ -10,11 +12,12 @@ function Port() {
   return (
     <div className="portfolio-div">
       <h1 className="title">Portfolio</h1>
+
       <div className="project-container">
         <div className="card-item IOS">
-          <img src={YomiIos} />
+          <img src={HumanIos} />
           <div className="overlay">
-            <div className="text">YOMIMASU</div>
+            <div className="text">Human</div>
           </div>
         </div>
         <div className="card-item MAC">
@@ -42,7 +45,10 @@ function Port() {
           </div>
         </div>
       </div>
+      {/* here */}
+      <PortCard/>
     </div>
+    
   );
 }
 

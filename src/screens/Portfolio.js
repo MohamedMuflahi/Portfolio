@@ -9,7 +9,6 @@ function Portfolio() {
     <Navbar />
     <div className="Content">
       <Port/>
-      
     </div>
   </div>
   )

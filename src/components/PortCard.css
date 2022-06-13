@@ -1,0 +1,9 @@
+.port-main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.port-left-div{
+}
+.port-right-div{
+}
